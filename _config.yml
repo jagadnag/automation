@@ -5,31 +5,24 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-# Theme Settings
-#
-# Review documentation to determine if you should use `theme` or `remote_theme`
-# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
-
-# theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "default". "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
+locale                   : "en-GB"
+title                    : "The Hype-Pipe"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Adam Rush"
+description              : "Passionate pseudo-geek, PowerShell lover, and DevOps advocate - falling down the Hype-Pipe; every day."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "adamrushuk/adamrushuk.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "adamrushuk-github-io" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -77,7 +70,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "adamrushuk"
 facebook:
   username               :
   app_id                 :
@@ -89,22 +82,23 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "https://www.linkedin.com/in/adamrushuk"
+    - "https://twitter.com/adamrushuk"
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "false" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+    tracking_id          : "-b6xHJFjEXxrXdWw74DtIYoCIEEUtmzXHGWZt1_1m4g"
 
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : "Adam Rush"
+  avatar           : "/assets/images/adam-rush-profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Passionate pseudo-geek, PowerShell lover, and DevOps advocate - falling down the Hype-Pipe; every day."
+  location         : "Bristol"
+  email            : "adamrushuk@gmail.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -113,19 +107,19 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "adamrushuk"
   gitlab           :
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "adamrushuk" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          :
+  twitter          : "adamrushuk"
   vine             :
   weibo            :
   xing             :
@@ -199,7 +193,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: "Europe/London" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -256,6 +250,16 @@ compress_html:
     envs: development
 
 
+# Collections
+collections:
+  commands:
+    output: true
+    permalink: /:collection/:path/
+  pipeline:
+    output: true
+    permalink: /:collection/:path/
+
+
 # Defaults
 defaults:
   # _posts
@@ -266,6 +270,40 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments:  true
       share: true
       related: true
+
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+  # _commands collection
+  - scope:
+      path: ""
+      type: commands
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: true
+      comments: false
+      sidebar:
+        nav: "commands"
+
+  # _pipeline collection
+  - scope:
+      path: ""
+      type: pipeline
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: true
+      comments: false
+      sidebar:
+        nav: "pipeline"
