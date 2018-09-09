@@ -8,21 +8,21 @@
 minimal_mistakes_skin    : "default" # "default". "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-GB"
-title                    : "The Hype-Pipe"
+locale                   : "en-US"
+title                    : "Network Automation"
 title_separator          : "-"
-name                     : "Adam Rush"
-description              : "Passionate pseudo-geek, PowerShell lover, and DevOps advocate - falling down the Hype-Pipe; every day."
+name                     : "Jag"
+description              : "."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "adamrushuk/adamrushuk.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "jagadnag/jagadnag.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
-    shortname            : "adamrushuk-github-io" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "jagadnag-github-io" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -70,7 +70,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : "adamrushuk"
+  username               : "jagadnag"
 facebook:
   username               :
   app_id                 :
@@ -82,23 +82,23 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://www.linkedin.com/in/adamrushuk"
-    - "https://twitter.com/adamrushuk"
+    - "https://www.linkedin.com/in/jagadnag"
+    - "https://twitter.com/jagadnag"
 
 # Analytics
 analytics:
   provider               : "false" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : "-b6xHJFjEXxrXdWw74DtIYoCIEEUtmzXHGWZt1_1m4g"
+    tracking_id          : ""
 
 
 # Site Author
 author:
-  name             : "Adam Rush"
-  avatar           : "/assets/images/adam-rush-profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "Jag"
+  avatar           : "/assets/images/jag-profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Passionate pseudo-geek, PowerShell lover, and DevOps advocate - falling down the Hype-Pipe; every day."
   location         : "Bristol"
-  email            : "adamrushuk@gmail.com"
+  email            : "jagadnag@gmail.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -107,19 +107,19 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "adamrushuk"
+  github           : "jagadnag"
   gitlab           :
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : "adamrushuk" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "jagadnag" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          : "adamrushuk"
+  twitter          : "jagadnag"
   vine             :
   weibo            :
   xing             :

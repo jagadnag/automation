@@ -1,7 +1,7 @@
 ---
 permalink: /about/
 title: "About Me"
-excerpt: "My name is Adam Rush and I’m a passionate pseudo-geek based in Bristol, UK."
+excerpt: "Network Engineer learning Automation."
 toc: true
 ---
 

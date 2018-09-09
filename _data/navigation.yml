@@ -1,13 +1,11 @@
 # main links
 main:
   - title: "About"
-    url: https://adamrushuk.github.io/about/
-  - title: "The Pipeline"
-    url: /pipeline/introduction/
+    url: https://jagadnag.github.io/about/
+  - title: "Automation"
+    url: /automation/
   - title: "Useful Commands"
     url: /commands/introduction/
-  - title: "Old Website"
-    url: http://www.virtuallyimpossible.co.uk/
  # - title: "Sitemap"
  #   url: /sitemap/
 
